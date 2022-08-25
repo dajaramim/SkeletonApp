@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="dark light">
+    <ion-title class="ion-text-center ion-padding texto-titulo">Skeleton APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenedor">
+
+    <ion-text class="texto-bienvenido center">Bienvenido!</ion-text>
+
+    <ion-text>Usuario: {{nameUser}}</ion-text>
+    <ion-text class="informacion center">Información Adicional</ion-text>
+
+
+    <ion-item class="item">
+      <ion-label class="label-text" position="fixed">Nombre</ion-label>
+      <ion-input type="text" minlength="3" maxlength="8" [(ngModel)]="nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item class="item">
+      <ion-label class="label-text" position="fixed">Apellido</ion-label>
+      <ion-input type="text" minlength="3" maxlength="12" [(ngModel)]="apellido" required></ion-input>
+    </ion-item>
+
+    <ion-item class="item">
+      <ion-label class="label-text padding-text ion-text-wrap" position="fixed" required>Nivel Educación</ion-label>
+      <ion-select interface="action-sheet" placeholder="Seleccione Nivel">
+        <ion-select-option value="basica">Educación Básica</ion-select-option>
+        <ion-select-option value="media">Educación Media</ion-select-option>
+        <ion-select-option value="superior">Educación Superior</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="item">
+      <ion-avatar slot="end">
+        <img src="../../assets/icon/calendar.png" />
+      </ion-avatar>
+      <ion-label class="label-text ion-text-wrap" position="fixed">Fecha Nacimiento</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="dark ligth" class="center" (click)="limpiar()">Limpiar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="dark ligth" class="center" (click)="presentToast()">Mostrar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+    <ion-text class="ion-text-align footer-text">App Desarrollada por: </ion-text>
+    <ion-text class="ion-text-align footer-text"> Daniel Jaramillo e Ignacio Torrealba</ion-text>
+  </ion-toolbar>
+</ion-footer>
