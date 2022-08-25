@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Prompt:wght@300&display=swap');
+* {
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box
+  }
+.contenedor {
+    margin: 0 auto;
+    padding: 1rem;
+}
+.center {
+    text-align: center;
+    display: block;
+}
+.texto-titulo{
+    font-size: 1.6rem;
+}
+.texto-bienvenido{
+    margin-top: 1.2rem  ;
+    font-size: 2rem;
+}
+a {
+    margin-top: 1rem;
+}

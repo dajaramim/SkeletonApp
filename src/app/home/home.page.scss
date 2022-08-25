@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Prompt:wght@300&display=swap');
+* {
+  font-family: 'Prompt', sans-serif;
+  box-sizing: border-box
+}
+.contenedor {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.center {
+  text-align: center;
+  display: block;
+}
+.texto-titulo{
+  font-size: 1.6rem;
+}
+.texto-bienvenido{
+  margin: 1.2rem 0  ;
+  font-size: 2rem;
+}
+
+.informacion{
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+}
+.label-text{ 
+  font-size: .9rem;
+}
+.padding-text {
+  margin-right: 3rem;
+}
+ion-avatar img {
+  border-radius: 0;
+}
+
+.footer-text{
+  display: block;
+  padding: 0.5rem 1.2rem;
+  
+}
